@@ -787,17 +787,17 @@
   .stat-card .stat-value { font-size: 34px !important; font-weight: 800 !important; }
   .section-title { font-size: 12px !important; letter-spacing: 0.2em !important; font-weight: 800 !important; }
 
-  /* LIVE badge → white pill, navy text + dot */
+  /* LIVE badge → white pill, black text + navy dot */
   .live-badge {
     background: #fff !important;
     border: 1px solid var(--open-navy) !important;
-    color: var(--open-navy) !important;
+    color: #000 !important;
     font-weight: 800 !important;
   }
   .live-dot { background: var(--open-navy) !important; }
 
-  /* THRU hole text → navy */
-  .pick-thru, .thru, .pick-meta .pick-thru { color: var(--open-navy) !important; font-weight: 700 !important; }
+  /* THRU hole text → black */
+  .pick-thru, .thru, .pick-meta .pick-thru { color: #000 !important; font-weight: 700 !important; }
   .pick-live-dot { background: var(--open-navy) !important; }
 
   /* Any cell that holds a score → white background */
@@ -831,13 +831,16 @@
     font-weight: 800 !important;
   }
 
-  /* Tiebreaker + thru text inside the yellow picks panel → navy */
+  /* Tiebreaker → navy; thru text inside the yellow picks panel → black */
   .tiebreaker-row,
   .tiebreaker-row .tb-label,
   .tiebreaker-row .tb-value,
-  .tiebreaker-row .tb-sep,
-  .pick-thru, .thru, .pick-meta .pick-thru {
+  .tiebreaker-row .tb-sep {
     color: var(--open-navy) !important;
+    font-weight: 700 !important;
+  }
+  .pick-thru, .thru, .pick-meta .pick-thru {
+    color: #000 !important;
     font-weight: 700 !important;
   }
 
