@@ -895,6 +895,22 @@
     .round-pill { font-size: 8px !important; min-width: 18px !important; }
     .stat-card .stat-value { font-size: 19px !important; }
   }
+
+  /* ── Convert all white text to navy ── */
+  body { color: var(--open-navy) !important; }
+  .header-meta strong,
+  .pick-name.counting,
+  .tiebreaker-row .tb-value,
+  .btn-clear-team:hover {
+    color: var(--open-navy) !important;
+  }
+  /* Elements that sit on the navy gradient stay white for contrast */
+  .section-title,
+  .my-team-bar label,
+  #lastUpdated,
+  .refresh-bar, .refresh-bar *, #countdown {
+    color: #fff !important;
+  }
 </style>
 </head>
 <body>
